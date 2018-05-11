@@ -49,4 +49,4 @@ seek=blocks #從輸出檔開頭跳過 blocks 個塊後再開始複製。(通常�
 count=blocks #僅拷貝 blocks 個塊，塊大小等於 ibs 指定的位元組數。 
 conv=conversion[,conversion...] #用指定的參數轉換檔。
 
-![](/pic/steg-5 紀錄解.PNG)
+![](the-paradise-of-pyhton/pic/steg-5 紀錄解.PNG)
