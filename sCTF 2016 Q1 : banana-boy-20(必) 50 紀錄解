@@ -1,7 +1,7 @@
 Steg-5
 sCTF 2016 Q1 : banana-boy-20(必) 50
 
-![image](https://github.com/orangeistoxic/the-paradise-of-pyhton/pic/scratch.PNG)
+
 解題步驟1:查看檔案格式
 
 解題步驟2:使用hex編輯器分析檔案
@@ -48,3 +48,5 @@ skip=blocks #從輸入檔開頭跳過 blocks 個塊後再開始複製。
 seek=blocks #從輸出檔開頭跳過 blocks 個塊後再開始複製。(通常只有當輸出檔是磁片或磁帶時才有效)。 
 count=blocks #僅拷貝 blocks 個塊，塊大小等於 ibs 指定的位元組數。 
 conv=conversion[,conversion...] #用指定的參數轉換檔。
+
+![image](https://github.com/orangeistoxic/the-paradise-of-pyhton/pic/scratch.PNG)
