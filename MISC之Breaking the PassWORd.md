@@ -6,4 +6,4 @@
 下圖為破解
 ![](pic/pypassans.PNG)
 最後執行便可知道答案
-![](pypasscode.PNG)
+![](pic/pypasscode.PNG)
