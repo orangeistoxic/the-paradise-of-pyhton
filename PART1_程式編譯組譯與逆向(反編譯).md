@@ -908,15 +908,61 @@ main:
 
 
 產生AT&T語法格式的組語(gcc預設使用的格式)
-
-gcc -S -masm=att XXXXX.c -o XXXXX_att.s
-產生Intel語法格式的組語(微軟預設使用的格式)
-
-gcc -S -masm=intel XXXXX.c -o XXXXX_intel.s
+gcc -S -masm=att hi.c -o hi_att.s
+```
+.file	"hi.c"
+	.section	.rodata
+.LC0:
+	.string	"hi\n "
+	.text
+	.globl	main
+	.type	main, @function
+main:
+.LFB0:
+	.cfi_startproc
+	pushq	%rbp
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 6
+	movl	$.LC0, %edi
+	movl	$0, %eax
+	call	printf
+	movl	$0, %eax
+	popq	%rbp
+	.cfi_def_cfa 7, 8
+	ret
+	.cfi_endproc
+.LFE0:
+	.size	main, .-main
+	.ident	"GCC: (Ubuntu 5.4.0-6ubuntu1~16.04.5) 5.4.0 20160609"
+	.section	.note.GNU-stack,"",@progbits
+```
+產生Intel語法格式的組語(微軟預設使用的格式)(這裡不示範)
+gcc -S -masm=intel hi.c -o hi_intel.s
 要去掉一堆註解:請加上參數-fno-asynchronous-unwind-tables
-
-gcc -S -masm=intel XXXXX.c -o XXXXX_intel_OK.s -fno-asynchronous-unwind-tables
-
+gcc -S -masm=att hi.c -o XXXXX_att_OK.s -fno-asynchronous-unwind-tables
+```
+.file	"hi.c"
+	.section	.rodata
+.LC0:
+	.string	"hi\n "
+	.text
+	.globl	main
+	.type	main, @function
+main:
+	pushq	%rbp
+	movq	%rsp, %rbp
+	movl	$.LC0, %edi
+	movl	$0, %eax
+	call	printf
+	movl	$0, %eax
+	popq	%rbp
+	ret
+	.size	main, .-main
+	.ident	"GCC: (Ubuntu 5.4.0-6ubuntu1~16.04.5) 5.4.0 20160609"
+	.section	.note.GNU-stack,"",@progbits
+```
 將組合語言程式碼轉成機器可以執行的指令(instructions)
 每一個組語語句都對應一機器指令。
 組譯器的組譯過程相對於編譯器來講比較簡單
