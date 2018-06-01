@@ -944,6 +944,8 @@ gcc -S -masm=intel hi.c -o hi_intel.s
 
 
 要去掉一堆註解:請加上參數-fno-asynchronous-unwind-tables
+
+
 gcc -S -masm=att hi.c -o XXXXX_att_OK.s -fno-asynchronous-unwind-tables
 ```
 .file	"hi.c"
