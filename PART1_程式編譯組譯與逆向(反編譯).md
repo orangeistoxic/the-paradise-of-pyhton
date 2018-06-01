@@ -908,7 +908,7 @@ gcc -c hi.i -o hi.o
  
  
  來看看檔案的大小差別
- ![](pic/all_kind_of_hi)
+ ![](pic/all_kind_of_hi.PNG)
 
 
 
@@ -972,7 +972,7 @@ main:
 	.ident	"GCC: (Ubuntu 5.4.0-6ubuntu1~16.04.5) 5.4.0 20160609"
 	.section	.note.GNU-stack,"",@progbits
 ```
-![](pic/att)
+![](pic/att.PNG)
 將組合語言程式碼轉成機器可以執行的指令(instructions)
 每一個組語語句都對應一機器指令。
 組譯器的組譯過程相對於編譯器來講比較簡單
@@ -980,4 +980,4 @@ main:
 
 
 /usr/include底下的header檔
-![](
+![](pic/include.PNG)
