@@ -905,6 +905,10 @@ main:
 gcc -c hi.i -o hi.o
 連結階段:
  gcc hi.o -o hi
+ 
+ 
+ 來看看檔案的大小差別
+ ![](pic/all_kind_of_hi)
 
 
 
@@ -968,7 +972,12 @@ main:
 	.ident	"GCC: (Ubuntu 5.4.0-6ubuntu1~16.04.5) 5.4.0 20160609"
 	.section	.note.GNU-stack,"",@progbits
 ```
+![](pic/att)
 將組合語言程式碼轉成機器可以執行的指令(instructions)
 每一個組語語句都對應一機器指令。
 組譯器的組譯過程相對於編譯器來講比較簡單
 沒有複雜的語法，也沒有語意，也不需要做指令最佳化，只是根據組語指令和機器指令的對照表一一翻譯就可以
+
+
+/usr/include底下的header檔
+![](
