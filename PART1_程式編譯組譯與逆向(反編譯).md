@@ -13,7 +13,7 @@ int main()
 ```
 預處理階段:
 gcc –E hi.c –o hi.i
-
+```
 # 1 "hi.c"
 # 1 "<built-in>"
 # 1 "<command-line>"
@@ -869,9 +869,10 @@ int main()
    printf("hi\n ");
    return 0;
 }
+```
 編譯階段:
 gcc –S XXX.i  –o XXX.s
-
+```
 file	"hi.c"
 	.section	.rodata
 .LC0:
@@ -899,7 +900,7 @@ main:
 	.size	main, .-main
 	.ident	"GCC: (Ubuntu 5.4.0-6ubuntu1~16.04.5) 5.4.0 20160609"
 	.section	.note.GNU-stack,"",@progbits
-  
+  ```
   組譯階段:
    gcc -c hi.i -o hi.o
   連結階段:
