@@ -66,6 +66,7 @@ x = sys.stdin.read(5)
 
 
 Python程式設計(basic)
+
 1.數字型(numeric)資料型態及其運算
 
 
