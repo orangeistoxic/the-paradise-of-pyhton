@@ -51,3 +51,58 @@ print("The average of", number1, number2, number3, "is", average)
 
 
 
+3.Python 標準庫 隨意輸入
+
+
+範例程式
+```
+#!/usr/bin/env python
+#coding=utf-8
+
+import sys
+x = sys.stdin.read(5) 
+```
+![](pic/a3-1.PNG)
+
+
+Python程式設計(basic)
+1.數字型(numeric)資料型態及其運算
+
+
+
+範例程式(換算時間)
+```
+#!/usr/bin/env python
+#coding=utf-8
+
+seconds = eval(input("Enter an integer for seconds: "))
+
+minutes = seconds // 60     # Find minutes in seconds
+remainingSeconds = seconds % 60   # Seconds remaining
+print(seconds, "seconds is", minutes, "minutes and", remainingSeconds, "seconds")
+```
+![](pic/a4-1.PNG)
+
+
+2.字串(string)資料型態及其運算
+範例程式(輸入一個字串並分析)
+```
+string = ""
+stringa = str()
+id(string)
+id(stringa)
+
+stringb = str("MyfirstCTF")
+
+string1 = "I love you"
+print(len(stringb))
+print(max(stringb))
+print(min(stringb))
+```
+len =>字數
+
+max =>最接近z的字母(abc..xyz)
+
+min =>最接近a的字母
+
+![](pic/a5-1.PNG)
