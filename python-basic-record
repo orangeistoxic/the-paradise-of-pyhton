@@ -16,9 +16,9 @@ area = radius * radius * 3.1415962
 print("The area for the circle of radius", radius, "is", area)
 
 
-1[](pic/frt-1.PNG)
+![](pic/frt-1.PNG)
 
 發現無法輸出 改使用python3
-1[](pic/frt-2.PNG)
+![](pic/frt-2.PNG)
 
 
